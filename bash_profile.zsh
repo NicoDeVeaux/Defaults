@@ -89,7 +89,6 @@ zle -N zle-keymap-select
 emulate sh -c 'source /etc/profile.d/apps-bin-path.sh'
 
 # added by Anaconda3 installer
-export PATH="/home/nick/anaconda3/bin:$PATH"
 
 utils_aliases
 git_aliases
