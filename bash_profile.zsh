@@ -8,6 +8,7 @@ function history_settings(){
 
 function utils_aliases() {
     alias tf='tail -f'
+    alias python='python3'
     alias hg='history 0 | grep'
     alias pss='ps aux | grep'
     alias vms='vmstat -S M -n 1 3000'
@@ -24,12 +25,6 @@ function utils_aliases() {
         cd $* && /bin/ls -lA
     }
    
-}
-
-function andrena_dev_aliases() {
-    source activate py3_env
-    # run unittests with twisted
-    alias tst='PYTHONPATH="${PWD}" trial'
 }
 
 function git_aliases() {
