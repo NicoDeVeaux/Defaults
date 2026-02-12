@@ -133,7 +133,7 @@ Packs are included from the upstream peon-ping repo:
 ## Requirements
 
 - [OpenCode](https://opencode.ai) (with plugin support)
-- `bash`, `python3`, `jq` (for peon.sh)
+- `bash`, `python3` (for peon.sh)
 - macOS: `afplay` (built-in) for sound playback
 - WSL: PowerShell for sound playback
 
