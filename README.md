@@ -1,12 +1,29 @@
-Defaults
-========
+# Defaults
 
-## Developer defaults
+Developer dotfiles and configuration templates.
 
-Install yadr and copy the bash_profile.zsh to the ~/.yadr/zsh directory
+## Contents
 
-Conda installed packages were tracked using the following command:
-`conda list --export > conda_package-list.txt`
+| File | Description |
+|---|---|
+| `.zshrc` | Minimal zsh config with vi mode, git aliases, and platform-aware clipboard |
+| `.gitconfig` | Git config template (edit name/email before use) |
+| `.tmux.conf` | tmux config with vi bindings, vim-tmux-navigator, and tpm |
+| `peon-ping-opencode/` | OpenCode plugin adapter for [peon-ping](https://github.com/tonyyont/peon-ping) sound notifications |
 
-Apt installed packages were tracked using the following commands:
-`apt list > apt_requirements.txt`
+## Setup
+
+```bash
+# Symlink what you need
+ln -sf ~/Dev/Defaults/.zshrc ~/.zshrc
+ln -sf ~/Dev/Defaults/.tmux.conf ~/.tmux.conf
+cp ~/Dev/Defaults/.gitconfig ~/.gitconfig  # copy, then edit name/email
+
+# Local overrides (not tracked)
+touch ~/.zshrc.local
+touch ~/.tmux.conf.local
+```
+
+## peon-ping for OpenCode
+
+See [peon-ping-opencode/README.md](peon-ping-opencode/README.md) for setup instructions.
